@@ -204,11 +204,12 @@ cd server
 npm test
 ```
 
-All 21 test suites execute in isolation with zero external database dependencies:
+All 40 tests across 5 test suites execute cleanly:
 - ✅ **ReadingValidators**: Checks missing values, value ranges (40–600), whole numbers, future dates, slot validation.
 - ✅ **ReadingService**: Checks 4 readings limit, slot conflict prevention, reading updates without self-collision.
 - ✅ **ReportService**: Checks statistical aggregation (highest, lowest, average rounded to 1 decimal), friendly empty states, date range calculations.
 - ✅ **AuthService**: Checks password hashing with bcrypt, unique email enforcement, token generation.
+- ✅ **Full API Integration Suite (`api.integration.test.js`)**: End-to-end testing of user registration, login, token authentication, all reading validations and error messages, CRUD operations, user data isolation, and all 3 clinical report calculations.
 
 ---
 
