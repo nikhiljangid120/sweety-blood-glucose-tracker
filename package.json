@@ -11,7 +11,15 @@
     "migrate": "cd server && npm run migrate",
     "test:server": "cd server && npm test"
   },
-  "keywords": ["glucose-tracker", "react", "express", "postgresql"],
+  "keywords": [
+    "glucose-tracker",
+    "react",
+    "express",
+    "postgresql"
+  ],
   "author": "Kenpath Assessment Candidate",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer-core": "^25.16.0"
+  }
 }
