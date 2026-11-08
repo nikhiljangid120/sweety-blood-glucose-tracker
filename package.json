@@ -1,0 +1,17 @@
+{
+  "name": "sweety-root",
+  "version": "1.0.0",
+  "description": "Sweety - Blood Glucose Tracker (MERN + PostgreSQL)",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start:server": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "migrate": "cd server && npm run migrate",
+    "test:server": "cd server && npm test"
+  },
+  "keywords": ["glucose-tracker", "react", "express", "postgresql"],
+  "author": "Kenpath Assessment Candidate",
+  "license": "MIT"
+}
